@@ -11,10 +11,6 @@
 
 public class Vehicle {
     /**
-     * Property for _plateNum.
-     */
-    private String _plateNum;
-    /**
      * Property for _colour.
      */
     protected String _colour;
@@ -27,6 +23,10 @@ public class Vehicle {
      */
     protected int _seatNum;
     /**
+     * Property for _length.
+     */
+    protected int _length;
+    /**
      * Property for _speed.
      */
     protected int _speed;
@@ -34,6 +34,10 @@ public class Vehicle {
      * Property for _maxSpeed.
      */
     protected int _maxSpeed;
+    /**
+     * Property for _plateNum.
+     */
+    private String _plateNum;
 
     /**
      * Default constructor for the class.
@@ -42,14 +46,17 @@ public class Vehicle {
      * @param colour passed in
      * @param doorNum passed in
      * @param seatNum passed in
+     * @param length passed in
      * @param speed passed in
      * @param maxSpeed passed in
      */
-    public Vehicle(String plateNum, String colour, int doorNum
-        int seatNum, int speed, int maxSpeed) {
+    public Vehicle(String plateNum, String colour, int doorNum,
+        int seatNum, int length, int speed, int maxSpeed) {
         this._plateNum = plateNum;
         this._colour = colour;
+        this._doorNum = doorNum;
         this._seatNum = seatNum;
+        this._length = length;
         this._speed = speed;
         this._maxSpeed = maxSpeed;
     }
@@ -125,7 +132,9 @@ public class Vehicle {
         // applies appropriate format for information
         System.out.println("License plate: " + _plateNum);
         System.out.println("Colour: " + _colour);
+        System.out.println("Number of doors: " + _doorNum);
         System.out.println("Number of seats: " + _seatNum);
+        System.out.println("Length: " + _length);
         System.out.println("Speed: " + _speed + " km/h");
         System.out.println("Max speed: " + _maxSpeed + " km/h");
     }

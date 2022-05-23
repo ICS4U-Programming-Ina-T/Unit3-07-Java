@@ -9,30 +9,34 @@
 
 class Plane extends Vehicle {
     /**
-     * Property for _wheelNum
+     * Property for _wheelNum.
      */
     private int _wheelNum;
     /**
-     * Property for _length
-     */
-    private int _length;
-    /**
-     * Property for _plateNum
+     * Property for _plateNum.
      */
     private String _tailNum;
     /**
-     * Property for _doorNum
+     * Property for _doorNum.
      */
     private int _doorNum;
 
     /**
      * Constructor for class.
+     *
+     * @param tailNum passed in
+     * @param colour passed in
+     * @param doorNum passed in
+     * @param wheelNum passed in
+     * @param seatNum passed in
+     * @param length passed in
+     * @param speed passed in
+     * @param maxSpeed passed in
      */
     public Plane(String tailNum, String colour, int doorNum,
-        int wheelNum, int length, int speed, int maxSpeed) {
-        super(tailNum, colour, doorNum, speed, maxSpeed);
+        int wheelNum, int seatNum, int length, int speed, int maxSpeed) {
+        super("", colour, doorNum, seatNum, length, speed, maxSpeed);
         _wheelNum = wheelNum;
-        _length = length;
         _tailNum = tailNum;
         _doorNum = doorNum;
     }
@@ -45,7 +49,8 @@ class Plane extends Vehicle {
         System.out.println("Colour: " + _colour);
         System.out.println("Number of doors: " + _doorNum);
         System.out.println("Number of wheels: " + _wheelNum);
-        System.out.println("Length: " + _length + "ft");
+        System.out.println("Number of seats: " + _seatNum);
+        System.out.println("Length: " + _length + " ft");
         System.out.println("Speed: " + _speed + " km/h");
         System.out.println("Max speed: " + _maxSpeed + " km/h");
     }

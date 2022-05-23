@@ -24,10 +24,10 @@ public class VehicleInventory {
      */
     public static void main(String[] args) {
         // create vehicles
-        Truck myTruck = new Truck("BBV 4389", "Navy Blue", 4, 22, 19, 0, 85);
-        Bike myBike = new Bike("Purple", 3, 2, 0, 55);
-        Plane myPlane = new Plane("C-MWEX", "White", 6, 16, 120, 0, 1300);
-        Boat myBoat = new Boat("Beige", 12, 0, 5);
+        Truck myTruck = new Truck("BBV 4389", "Navy Blue", 4, 22, 2, 19, 0, 85);
+        Bike myBike = new Bike("Purple", 3, 2, 8, 0, 55);
+        Plane myPlane = new Plane("C-MWEX", "White", 6, 16, 52, 120, 0, 1300);
+        Boat myBoat = new Boat("Beige", 4, 12, 0, 5);
 
         // declaring variables
         List<Vehicle> listOfVehicles = new ArrayList<Vehicle>();
@@ -42,12 +42,12 @@ public class VehicleInventory {
 
         // calls appropriate methods for truck one
         listOfVehicles.get(0).getMaxSpeed();
-        listOfVehicles.get(0).accelerate(30);
-        listOfVehicles.get(0).accelerate(65);
+        listOfVehicles.get(0).accelerate(34);
+        listOfVehicles.get(0).accelerate(22);
         listOfVehicles.get(0).getSpeed();
-        listOfVehicles.get(0).brake(25);
-        listOfVehicles.get(0).accelerate(15);
-        listOfVehicles.get(0).brake(1);
+        listOfVehicles.get(0).brake(13);
+        listOfVehicles.get(0).accelerate(5);
+        listOfVehicles.get(0).brake(10);
         listOfVehicles.get(0).getSpeed();
 
         System.out.println();
@@ -61,14 +61,13 @@ public class VehicleInventory {
 
         // calls appropriate methods for bike one
         listOfVehicles.get(1).getMaxSpeed();
-        listOfVehicles.get(1).brake(13);
-        listOfVehicles.get(1).accelerate(45);
-        listOfVehicles.get(1).brake(26);
-        listOfVehicles.get(1).getSpeed();
-        listOfVehicles.get(1).accelerate(22);
         listOfVehicles.get(1).brake(4);
+        listOfVehicles.get(1).accelerate(23);
+        listOfVehicles.get(1).brake(11);
         listOfVehicles.get(1).getSpeed();
-        listOfVehicles.get(1).accelerate(223);
+        listOfVehicles.get(1).accelerate(19);
+        listOfVehicles.get(1).getSpeed();
+        listOfVehicles.get(1).brake(8);
 
         System.out.println();
         System.out.println("Bike #1:");
@@ -81,14 +80,14 @@ public class VehicleInventory {
 
         // calls appropriate methods for plane one
         listOfVehicles.get(2).getMaxSpeed();
-        listOfVehicles.get(2).brake(130);
         listOfVehicles.get(2).accelerate(290);
-        listOfVehicles.get(2).brake(35);
+        listOfVehicles.get(2).brake(130);
+        listOfVehicles.get(2).accelerate(345);
+        listOfVehicles.get(2).brake(55);
         listOfVehicles.get(2).getSpeed();
-        listOfVehicles.get(2).accelerate(22);
-        listOfVehicles.get(2).brake(4);
+        listOfVehicles.get(2).accelerate(110);
         listOfVehicles.get(2).getSpeed();
-        listOfVehicles.get(2).accelerate(555);
+        listOfVehicles.get(2).accelerate(345);
 
         System.out.println();
         System.out.println("Plane #1:");
