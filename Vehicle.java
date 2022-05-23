@@ -17,19 +17,23 @@ public class Vehicle {
     /**
      * Property for _colour.
      */
-    private String _colour;
+    protected String _colour;
     /**
      * Property for _doorNum.
      */
-    private int _doorNum;
+    protected int _doorNum;
+    /**
+     * Property for _seatNum.
+     */
+    protected int _seatNum;
     /**
      * Property for _speed.
      */
-    private int _speed;
+    protected int _speed;
     /**
      * Property for _maxSpeed.
      */
-    private int _maxSpeed;
+    protected int _maxSpeed;
 
     /**
      * Default constructor for the class.
@@ -37,14 +41,15 @@ public class Vehicle {
      * @param plateNum passed in
      * @param colour passed in
      * @param doorNum passed in
+     * @param seatNum passed in
      * @param speed passed in
      * @param maxSpeed passed in
      */
-    public Vehicle(String plateNum, String colour,
-        int doorNum, int speed, int maxSpeed) {
+    public Vehicle(String plateNum, String colour, int doorNum
+        int seatNum, int speed, int maxSpeed) {
         this._plateNum = plateNum;
         this._colour = colour;
-        this._doorNum = doorNum;
+        this._seatNum = seatNum;
         this._speed = speed;
         this._maxSpeed = maxSpeed;
     }
@@ -120,22 +125,8 @@ public class Vehicle {
         // applies appropriate format for information
         System.out.println("License plate: " + _plateNum);
         System.out.println("Colour: " + _colour);
-        System.out.println("Number of doors: " + _doorNum);
+        System.out.println("Number of seats: " + _seatNum);
         System.out.println("Speed: " + _speed + " km/h");
         System.out.println("Max speed: " + _maxSpeed + " km/h");
     }
-    
-    // class Truck extends Vehicle {
-    //     public int _wheelNum;
-    //     public int _length;
-
-    //     /**
-    //      * Constructor for class.
-    //      */
-    //     public Truck(String plateNum, String colour, int doorNum, int wheelNum, int length, int speed, int maxSpeed) {
-    //         super(plateNum, colour, doorNum, speed, maxSpeed);
-    //         _wheelNum = wheelNum;
-    //         _length = length;
-    //     }
-    // }
 }

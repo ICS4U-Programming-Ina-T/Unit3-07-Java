@@ -1,5 +1,5 @@
 /**
- * The Truck program implements an application that
+ * The Plane program implements an application that
  * inherts characteristics from the Vehicle class.
  *
  * @author  Ina Tolo
@@ -7,7 +7,7 @@
  * @since   2022-5-20
  */
 
-class Truck extends Vehicle {
+class Plane extends Vehicle {
     /**
      * Property for _wheelNum
      */
@@ -19,7 +19,7 @@ class Truck extends Vehicle {
     /**
      * Property for _plateNum
      */
-    private String _plateNum;
+    private String _tailNum;
     /**
      * Property for _doorNum
      */
@@ -27,22 +27,13 @@ class Truck extends Vehicle {
 
     /**
      * Constructor for class.
-     *
-     * @param platNum passed in
-     * @param colour passed in
-     * @param doorNum passed in
-     * @param seatNum passed in
-     * @param wheelNum passed in
-     * @param length passed in
-     * @param speed passed in
-     * @param maxSpeed passed in
      */
-    public Truck(String plateNum, String colour, int doorNum,
+    public Plane(String tailNum, String colour, int doorNum,
         int wheelNum, int length, int speed, int maxSpeed) {
-        super(plateNum, colour, doorNum, speed, maxSpeed);
+        super(tailNum, colour, doorNum, speed, maxSpeed);
         _wheelNum = wheelNum;
         _length = length;
-        _plateNum = plateNum;
+        _tailNum = tailNum;
         _doorNum = doorNum;
     }
 
@@ -50,7 +41,7 @@ class Truck extends Vehicle {
      * Method that uses polymorphism to alter format of vehicle info.
      */
     protected void getInfo() {
-        System.out.println("License plate: " + _plateNum);
+        System.out.println("Tail number: " + _tailNum);
         System.out.println("Colour: " + _colour);
         System.out.println("Number of doors: " + _doorNum);
         System.out.println("Number of wheels: " + _wheelNum);
