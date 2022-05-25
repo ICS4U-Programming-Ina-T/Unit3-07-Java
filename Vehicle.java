@@ -1,15 +1,14 @@
 /**
  * The Vehicle program implements an application that
- * receives characteristics of a vehicle, then alters
- * speed and properly formats the information for the
- * user to read.
+ * acts as an abstract class to create a template for
+ * necessary functions in any subclasses.
  *
  * @author  Ina Tolo
  * @version 1.0
  * @since   2022-5-20
  */
 
-abstract public class Vehicle {
+public abstract class Vehicle {
     /**
      * Property for _colour.
      */
@@ -66,27 +65,27 @@ abstract public class Vehicle {
      *
      * @param accelNum passed in
      */
-    abstract void accelerate(int accelNum) {}
+    protected abstract void accelerate(int accelNum);
 
     /**
      * Method that alters the speed by applying brakes.
      *
      * @param brakeNum passed in
      */
-    abstract void brake(int brakeNum) {}
+    protected abstract void brake(int brakeNum);
 
     /**
      * Method that tells the user the current speed.
      */
-    abstract void getSpeed() {}
+    protected abstract void getSpeed();
 
     /**
      * Method that tells the user what the max speed of a vehicle is.
      */
-    abstract void getMaxSpeed() {}
+    protected abstract void getMaxSpeed();
 
     /**
      * Method that tells user information and characteristics about a vehicle.
      */
-    abstract void getInfo() {}
+    protected abstract void getInfo();
 }

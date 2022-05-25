@@ -1,6 +1,6 @@
 /**
  * The Plane program implements an application that
- * inherts characteristics from the Vehicle class.
+ * inherits characteristics from the Vehicle class.
  *
  * @author  Ina Tolo
  * @version 1.0
