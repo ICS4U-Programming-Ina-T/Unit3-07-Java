@@ -10,57 +10,6 @@
 
 public abstract class Vehicle {
     /**
-     * Property for _colour.
-     */
-    protected String _colour;
-    /**
-     * Property for _doorNum.
-     */
-    protected int _doorNum;
-    /**
-     * Property for _seatNum.
-     */
-    protected int _seatNum;
-    /**
-     * Property for _length.
-     */
-    protected int _length;
-    /**
-     * Property for _speed.
-     */
-    protected int _speed;
-    /**
-     * Property for _maxSpeed.
-     */
-    protected int _maxSpeed;
-    /**
-     * Property for _plateNum.
-     */
-    private String _plateNum;
-
-    /**
-     * Default constructor for the class.
-     *
-     * @param plateNum passed in
-     * @param colour passed in
-     * @param doorNum passed in
-     * @param seatNum passed in
-     * @param length passed in
-     * @param speed passed in
-     * @param maxSpeed passed in
-     */
-    public Vehicle(String plateNum, String colour, int doorNum,
-        int seatNum, int length, int speed, int maxSpeed) {
-        this._plateNum = plateNum;
-        this._colour = colour;
-        this._doorNum = doorNum;
-        this._seatNum = seatNum;
-        this._length = length;
-        this._speed = speed;
-        this._maxSpeed = maxSpeed;
-    }
-
-    /**
      * Method that adds acceleration to the current speed.
      *
      * @param accelNum passed in

@@ -9,17 +9,37 @@
 
 class Plane extends Vehicle {
     /**
-     * Property for _wheelNum.
-     */
-    private int _wheelNum;
-    /**
-     * Property for _plateNum.
+     * Property for _tailNum.
      */
     private String _tailNum;
+    /**
+     * Property for _colour.
+     */
+    private String _colour;
     /**
      * Property for _doorNum.
      */
     private int _doorNum;
+    /**
+     * Property for _wheelNum.
+     */
+    private int _wheelNum;
+    /**
+     * Property for _seatNum.
+     */
+    private int _seatNum;
+    /**
+     * Property for _length.
+     */
+    private int _length;
+    /**
+     * Property for _speed.
+     */
+    private int _speed;
+    /**
+     * Property for _maxSpeed.
+     */
+    private int _maxSpeed;
 
     /**
      * Constructor for class.
@@ -35,10 +55,15 @@ class Plane extends Vehicle {
      */
     public Plane(String tailNum, String colour, int doorNum,
         int wheelNum, int seatNum, int length, int speed, int maxSpeed) {
-        super("", colour, doorNum, seatNum, length, speed, maxSpeed);
-        _wheelNum = wheelNum;
-        _tailNum = tailNum;
-        _doorNum = doorNum;
+        // super("", colour, doorNum, seatNum, length, speed, maxSpeed);
+        this._tailNum = tailNum;
+        this._colour = colour;
+        this._doorNum = doorNum;
+        this._wheelNum = wheelNum;
+        this._seatNum = seatNum;
+        this._length = length;
+        this._speed = speed;
+        this._maxSpeed = maxSpeed;
     }
 
     /**

@@ -9,9 +9,29 @@
 
 class Bike extends Vehicle {
     /**
+     * Property for _colour.
+     */
+    private String _colour;
+    /**
      * Property for _wheelNum.
      */
     private int _wheelNum;
+    /**
+     * Property for _seatNum.
+     */
+    private int _seatNum;
+    /**
+     * Property for _length.
+     */
+    private int _length;
+    /**
+     * Property for _speed.
+     */
+    private int _speed;
+    /**
+     * Property for _maxSpeed.
+     */
+    private int _maxSpeed;
 
     /**
      * Constructor for class.
@@ -25,8 +45,12 @@ class Bike extends Vehicle {
      */
     public Bike(String colour, int wheelNum, int seatNum,
         int length, int speed, int maxSpeed) {
-        super("", colour, 0, seatNum, length, speed, maxSpeed);
-        _wheelNum = wheelNum;
+        this._colour = colour;
+        this._wheelNum = wheelNum;
+        this._seatNum = seatNum;
+        this._length = length;
+        this._speed = speed;
+        this._maxSpeed = maxSpeed;
     }
 
     /**

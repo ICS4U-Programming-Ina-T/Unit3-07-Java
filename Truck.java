@@ -9,17 +9,37 @@
 
 class Truck extends Vehicle {
     /**
-     * Property for _wheelNum.
-     */
-    private int _wheelNum;
-    /**
      * Property for _plateNum.
      */
     private String _plateNum;
     /**
+     * Property for _colour.
+     */
+    private String _colour;
+    /**
      * Property for _doorNum.
      */
     private int _doorNum;
+    /**
+     * Property for _wheelNum.
+     */
+    private int _wheelNum;
+    /**
+     * Property for _seatNum.
+     */
+    private int _seatNum;
+    /**
+     * Property for _length.
+     */
+    private int _length;
+    /**
+     * Property for _speed.
+     */
+    private int _speed;
+    /**
+     * Property for _maxSpeed.
+     */
+    private int _maxSpeed;
 
     /**
      * Constructor for class.
@@ -35,10 +55,14 @@ class Truck extends Vehicle {
      */
     public Truck(String plateNum, String colour, int doorNum,
         int wheelNum, int seatNum, int length, int speed, int maxSpeed) {
-        super(plateNum, colour, doorNum, seatNum, length, speed, maxSpeed);
-        _plateNum = plateNum;
-        _wheelNum = wheelNum;
-        _doorNum = doorNum;
+        this._plateNum = plateNum;
+        this._colour = colour;
+        this._doorNum = doorNum;
+        this._wheelNum = wheelNum;
+        this._seatNum = seatNum;
+        this._length = length;
+        this._speed = speed;
+        this._maxSpeed = maxSpeed;
     }
 
     /**
